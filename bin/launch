@@ -1,0 +1,7 @@
+#!/bin/sh
+
+nginx -g "daemon off;" &
+slackin "${SLACK_SUBDOMAIN:?SLACK_SUBDOMAIN must be set}" \
+        "${SLACK_TOKEN:?SLACK_TOKEN must be set}" \
+        --interval 30000 \
+        -p 3000
