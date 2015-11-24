@@ -1,7 +1,7 @@
 FROM node:5-slim
 
 RUN apt-get -y update
-RUN apt-get -y install nginx
+RUN apt-get -y install nginx build-essential
 RUN npm install -g slackin
 
 COPY conf/nginx.conf /etc/nginx/nginx.conf
