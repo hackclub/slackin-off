@@ -1,4 +1,4 @@
-# slackin-off
+# slackin-off [DEPRECATED]
 
 This is our deployment of [`slackin`](https://github.com/rauchg/slackin) on
 [Convox](https://convox.com/).
